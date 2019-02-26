@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>Sign up</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+      <script src="https://code.jquery.com/jquery.js"></script>
+
+      <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+	  <link href="https://cdn.bootcss.com/font-awesome/4.3.0/css/font-awesome.css" rel="stylesheet">
+      <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+      <![endif]-->
+      <script src="{{ url_for('static', filename='js/signUp.js') }}"></script>
+    
+	  <link type="text/css" href="{{ url_for('static', filename='css/signIn.css') }}" rel="stylesheet">
+
+   </head>
+
+   <body>
+   <div class="container">
+        <div class="form row">  
+            <form class="form-horizontal col-sm-offset-3 col-md-offset-3" id="login_form" method="POST" action="/signup" >
+                <h3 class="form-title">Sign up your account</h3>  
+                <div class="col-sm-9 col-md-9"> 
+					<div class="form-group">  
+                        <i class="fa fa-user fa-lg"></i>  
+                        <input class="form-control required" type="text" placeholder="email" name="email" id="email" autofocus="autofocus" maxlength="20"/>
+                    </div>				
+                    <div class="form-group">  
+                        <i class="fa fa-user fa-lg"></i>  
+                        <input class="form-control required" type="text" placeholder="Nickname" name="nick" id="nickname" autofocus="autofocus" maxlength="20"/>
+                    </div>  
+                    <div class="form-group">  
+                            <i class="fa fa-lock fa-lg"></i>  
+                            <input class="form-control required" type="password" placeholder="Password (more than 6 digits or characters)" name="password" id="password" maxlength="8"/>
+                    </div>  
+					<div class="form-group">  
+                            <i class="fa fa-lock fa-lg"></i>  
+                            <input class="form-control required" type="password" placeholder="type password again" name="rp" id="repassword" maxlength="8"/>
+                    </div> 
+                    
+                    <div class="form-group">  
+                        <input type="submit" class="btn btn-success pull-right" value="Sign up" onclick="check_register();"/>     
+                    </div>
+                </div>  
+            </form>
+        </div>  
+   </div>
+   </body>
+
+</html>

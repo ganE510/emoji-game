@@ -1,0 +1,21 @@
+.mode{
+    height:50%;
+	margin-top:200px;
+	margin-left:100px;
+	width:30%
+}
+
+a {
+    color: #333;
+    background-color: #fcf8e39e;
+}
+
+html,body {
+	height:100%;
+	background-image: url('../img/cover.jpg');
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	font-size:15px;
+	font-color:black;
+}

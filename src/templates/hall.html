@@ -1,0 +1,76 @@
+<!DOCTYPE html>  
+<html>  
+<head>  
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>  
+    <title>hall</title>
+    <meta charset="utf-8" />  
+    <link rel="stylesheet" href="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/css/bootstrap.min.css">  
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/hall.css') }}">
+    <script src="http://cdn.static.runoob.com/libs/jquery/2.1.1/jquery.min.js"></script>  
+    <script src="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/js/bootstrap.min.js"></script>  
+
+</head>  
+<body>      
+ <div class="container-fluid">  
+        <div class="row" >
+            <div class="col-md-2" style="margin-top:60px">  <!--STYLE!!!!!><-->
+                <ul id="main-nav" class="nav nav-tabs nav-stacked" >  
+                    <li class="active" >  
+                        <a href="#">  
+                            <i class="glyphicon glyphicon-th-large"></i>  
+                            profile
+                        </a>
+                    </li>
+					<li>  
+                        <a href="changePhoto.html">
+							<img src="{{ url_for('static', filename='img/userphotos/default.jpg') }}" id="touxiang"  alt="profile photo" width="160" height="160">
+                            <p id="userID">{{username}}</p>
+                        </a>  
+                    </li>
+					<li>  
+                        <a href="./grid.html">  
+                            <i class="glyphicon glyphicon-globe"></i>  
+                            bronze tier
+                        </a>  
+                    </li>
+                    <li>  
+                        <a href="#">  
+                            <i class="glyphicon glyphicon-fire"></i>  
+                            messages  
+							<span class="label label-warning pull-right">0</span>
+                        </a>
+                    </li>  
+                    <li>  
+                        <a href="#systemSetting" class="nav-header collapsed" data-toggle="collapse">  
+                            <i class="glyphicon glyphicon-cog"></i>  
+                            settings
+                            <span class="pull-right glyphicon glyphicon-chevron-down"></span>  
+                        </a>  
+					</li>
+                            <li><a href="#"><i class="glyphicon glyphicon-th-list"></i> background</a></li>  
+                            <li><a href="#"><i class="glyphicon glyphicon-edit"></i> edit password</a></li>  
+
+                    <li>  
+                        <a href="signIn.html">  
+                            <i class="glyphicon glyphicon-credit-card"></i>  
+                            log out 
+                        </a>
+                    </li>  
+                    
+                </ul>  
+            </div>
+            <div class="col-md-10">  
+                <div class="col-md-3 mode">
+                    <a  href="{{ url_for('onePlayer')}}">
+                        <img src="{{ url_for('static', filename='img/button1.png') }}" id="button1"  alt=""></a>
+                </div>
+				<div class ="col-md-3 mode">
+                    <a  href="{{ url_for('twoPlayer')}}">
+                    <img src="{{ url_for('static', filename='img/button2.png') }}" id="button2"  alt=""></a>
+                </div>
+            </div>
+        </div>
+    </div>  
+
+</body>
+</html>

@@ -1,0 +1,39 @@
+html,body{
+    height: 100%;
+	font-size: 16px;
+	background-image: url('../img/cover.jpg');
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.form{
+    width:400px;
+    margin:100px auto;
+}
+
+#login_form{display: block;}
+
+#register_form{display: none;}
+
+.fa{
+    display: inline-block;
+    top: 27px;
+    left: 6px;
+    position: relative;
+    color: #ccc;
+}
+
+input[type="text"],input[type="password"]{padding-left:26px;}
+
+.checkbox{padding-left:21px;}
+
+.footie{
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	height: 60px;
+	background: #6cf;
+	clear:both;
+	text-align:center
+}
